@@ -1,1 +1,26 @@
 
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SOA-Assignment-2</display-name>
+  <welcome-file-list>
+    <welcome-file>GetFormData.jsp</welcome-file>
+   </welcome-file-list>
+   
+   <servlet>
+    <servlet-name>processCustData</servlet-name>
+    <servlet-class>processCustData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>processCustData</servlet-name>
+    <url-pattern>/processCustData</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>ProcessCustomerDataRequest</servlet-name>
+  <jsp-file>/ProcessCustomerDataRequest.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProcessCustomerDataRequest</servlet-name>
+    <url-pattern>/ProcessCustomerDataRequest.jsp</url-pattern>
+  </servlet-mapping>    
+  
+</web-app>
